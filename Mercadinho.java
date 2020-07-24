@@ -48,14 +48,13 @@ public class Mercadinho {
 
 
             for (int i = 0; i < produtos.length; i++) {
-                int index = 0;
+               
                 System.out.println("Qual produto deseja comprar?");
                 String produtoComprar = scan.next();
 
                 buscaPosicaoProduto(produtoComprar,produtos);
                 int posicaoProduto = buscaPosicaoProduto(produtoComprar,produtos);
-                //int p=produtoComprar.indexOf(produtos[i]);
-
+               
                     System.out.println("Produto escolhido | " +produtos[posicaoProduto]);
                     System.out.println("Preço | " + precos[posicaoProduto]);
                     System.out.println("Insira o valor do pagamento");
